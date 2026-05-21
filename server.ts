@@ -12,7 +12,7 @@ function getGeminiClient(): GoogleGenAI {
   if (!aiClient) {
     const apiKey = process.env.GEMINI_API_KEY;
     if (!apiKey) {
-      throw new Error("找不到 GEMINI_API_KEY 環境變數。請在 AI Studio 中透過『Settings > Secrets』設定您的 API 憑證。");
+      throw new Error("找不到 GEMINI_API_KEY 環境變數，請在環境變數或 .env 檔案中設定您的 Gemini API 金鑰。");
     }
     aiClient = new GoogleGenAI({
       apiKey: apiKey,

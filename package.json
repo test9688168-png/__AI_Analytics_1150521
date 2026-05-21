@@ -1,7 +1,8 @@
 {
-  "name": "react-example",
+  "name": "ai-csv-analytics-dashboard",
+  "description": "An AI-powered CSV data analytics and business intelligence dashboard powered by Gemini 3.5 Flash.",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
   "type": "module",
   "scripts": {
     "dev": "tsx server.ts",
